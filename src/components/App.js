@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../logo.png';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
+import Portfolio from './portfolio';
+import Skills from './skills';
 
 export default class App extends Component {
 
@@ -10,8 +13,10 @@ export default class App extends Component {
     render() {
         return (
             <div className='container'>                
-                <img className='logo' src={logo} />
-                <h1 className='title'>React Starter</h1>
+                <AboutMe></AboutMe>
+                <Contact></Contact>
+                <Portfolio></Portfolio>
+                <Skills></Skills>
             </div>
         );
     }
